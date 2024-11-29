@@ -1,0 +1,49 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Default font */
+    background-image: url('https://www.w3schools.com/w3images/flowers.jpg'); /* Flower background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+/* Container for the message */
+.message-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Text styling */
+#message {
+    font-family: 'Dancing Script', cursive; /* Custom font */
+    font-size: 2.5rem; /* Larger text */
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animation to fade text in */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
